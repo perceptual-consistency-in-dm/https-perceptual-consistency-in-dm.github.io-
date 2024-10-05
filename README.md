@@ -1,4 +1,4 @@
-# Webpage for PCDM: Perceptual Consistency in Diffusion Models for No-Reference Image Quality Assessment
+# Webpage for _PCDM: Perceptual Consistency in Diffusion Models for No-Reference Image Quality Assessment_
 
 
 ## Acknowledgments
