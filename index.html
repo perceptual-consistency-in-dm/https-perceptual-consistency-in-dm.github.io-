@@ -106,14 +106,15 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title"><span class="pcdm">PCDM</span>: Perceptual Consistency in Diffusion Models For No-Reference Image Quality Assessment</h1>
-            <div class="is-size-4 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-              
-            </div> 
+            <h1 class="title is-1 publication-title"><span class="pcdm" style="color: rgb(53, 144, 243);">PCDM</span>: <span style="color: rgb(53, 144, 243);">P</span>erceptual <span style="color: rgb(53, 144, 243);">C</span>onsistency in <span style="color: rgb(53, 144, 243);">D</span>iffusion <span style="color: rgb(53, 144, 243);">M</span>odels for No-Reference Image Quality Assessment</h1>
+            
+            <!-- <div class="is-size-4 publication-authors">
+
+              <span class="author-block"> 
+            </div> -->
+
               <div class="is-size-4 publication-authors">
-                <span class="author-block" style="color:black"> Under Review - ICLR 2025 </span>
+                <span class="author-block" style="color: rgb(231, 111, 81);; font-weight: bold;"><em>Under Review - ICLR 2025</em></span>
                   <!-- <br>Conferance name and year</span> -->
               </div>
                   <!-- PDF Link -->
@@ -146,7 +147,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code (Coming Soon)</span>
                     </a>
                   </span>
         </div>
@@ -161,13 +162,13 @@
 
   <div class="columns is-centered" style="margin-top:-20px">
     <h1 class="is-size-3"> 
-      <mark style="background: rgb(171, 121, 85)"> PCDM uses pretrained Latent Diffusion Models (LDM) to do zero-shot No-Reference Image Quality Assessment (NR-IQA).
+      <mark style="background: rgb(255, 255, 102)"> PCDM uses pretrained Latent Diffusion Models (LDM) to do 
         <!-- We decrease CFG gudiance weight to 0 &lt; $ \lambda $ &lt; 1 by revising DDIM renoising step. -->
         <!-- Change $ \hat\epsilon^w_c $ → $ \hat\epsilon_\varnothing $ in CFG renoising -->
   </div>
   <div class="columns is-centered" style="margin-top:-10px">
     <h1 class="is-size-3"> 
-      <mark style="background: rgb(255, 255, 102)"> 
+      <mark style="background: rgb(255, 255, 102)"> Zero-shot No-Reference Image Quality Assessment (NR-IQA).
         <!-- Revise DDIM renoising step  -->
         <!-- ➜ smaller guidance scale 0 &lt; $ \lambda $ &lt; 1  better sampling & inversion -->
         <!-- smooth generative trajectory, better sample quality, and superior inversion capability.</mark></h1> -->
@@ -175,6 +176,22 @@
         <!-- better sample & inversion quality -->
       </mark></h1>
   </div> 
+
+  <div class="hero-body">
+    <div class="container">
+    <!-- add single image for overview-->
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <img src="static/images/manifold-travel.png" alt="manifold-travel"/>
+          <!-- add centered text -->
+          <p style="margin-top:5px; margin-bottom: 10px; font-size:18px;">
+            An overview of our proposed approach: (a) shows the transition of latent samples across
+            latent manifolds, highlighting the steps of DDIM and Perceptual Manifold Guidance. (b) depicts the content bias (green) on
+            the manifold <strong>$ \mathcal{M}_0 \approx \mathcal{D}(\mathcal{Z}_0) $</strong> showing that the guidance term in red (PMG) pushes a data sample
+            <strong>$ x′_{0|t} \sim \mathcal{D}(z′_{0|t})$</strong> towards the perceptually consistent region (yellow) of the manifold.
+          </p>
+        </div>
+      </div>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -209,13 +226,27 @@
       <div class="column is-four-sixths">
         <h2 class="title is-3">Proposed Method</h2>
         <div class="content has-text-justified">
-          <img src="static/images/rs_algorithm.png" alt="rs_algorithm"/>
+          <div class="columns is-centered">
+            <div class="column">
+              <img src="static/images/algo.png" alt="algorithm" class="is-2" style="width: 700px; height: auto;"/>
+              <p style="text-align: center;">(a)</p>
+            </div>
+            <div class="column">
+              <img src="static/images/PMG.png" alt="PMG" class="is-2" style="width: 359px; height: auto;"/>
+              <p style="text-align: center;">(b)</p>
+            </div>
+          </div>
           <p style=" font-size:18px;">
-            In CFG++, the renoising process after applying Tweedie’s formula should utilize the unconditional noise 
-            <span class="eps_null">$ \hat\epsilon_\varnothing $</span> instead of <span class="eps_cfg">$ \hat\epsilon^w_c $</span>. This surprisingly simple fix to the original CFG algorithm 
-            leads to smoother trajectory of generation. This improvement is also demonstrated in the following visualization of the discrete evolution of the posterior mean.
+            We introduce the Perceptually Consistent Diffusion Model (PCDM) for No-Reference Image Quality Assessment (NR-IQA), 
+            leveraging the robust representation capabilities of pretrained latent diffusion models (LDMs). 
+            Our method employs Perceptual Manifold Guidance (PMG) to direct the diffusion sampling process toward perceptually consistent regions on the data manifold, 
+            enhancing the model's sensitivity to variations in image quality. 
+            Furthermore, we extract multi-scale and multi-timestep features—termed diffusion hyperfeatures—from the denoising U-Net within the LDM. 
+            These hyperfeatures provide a rich and detailed representation crucial for accurate quality assessment. 
+            As illustrated in Algorithm (a), the overall procedure of our PCDM involves guiding the sampling process and extracting hyperfeatures for quality prediction. 
+            Figure (b) demonstrates the hyperfeature extraction step, highlighting how features are aggregated across different scales and timesteps. 
+            To our knowledge, this is the first work to utilize pretrained LDMs for NR-IQA in a zero-shot manner, offering a novel approach that sets the stage for future research in this domain.
           </p>
-          <img src="static/images/tweedie_progression.png" alt="tweedie_progression"/>
         </div>
       </div>
     </div>
@@ -224,8 +255,8 @@
 <!-- End Method -->
 
 
-<!-- Downstream Tasks -->
-<section class="section hero is-light">
+<!-- NR-IQA -->
+<section class="section hero ">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-sxiths">
