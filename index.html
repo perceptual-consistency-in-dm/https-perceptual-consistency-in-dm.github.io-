@@ -5,27 +5,27 @@
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="CFG++"/>
+  <meta property="og:description" content="Project Page for CFG++"/>
+  <meta property="og:url" content="cfgpp-diffusion.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/banner_rainbow.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="CFG++">
+  <meta name="twitter:description" content="Project Page for CFG++">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="static/images/banner_rainbow.png">
+  <meta name="twitter:card" content="Project Page for CFG++">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>CFG++</title>
+  <link rel="icon" type="image/x-icon" href="">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -43,6 +43,60 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+    </script>
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script
+  defer
+  src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
+  ></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+  />
+
+  <style>
+  .eps_null {
+    color: rgb(53, 144, 243);
+  }
+  .eps_cfg {
+    color: rgb(231, 111, 81);
+  }
+  .cfgpp{
+    color: rgb(42, 157, 143);
+  }
+
+  hr.solid {
+  border-top: 2px solid #bbb;
+  }
+
+  table, td, th {
+  border: 1px solid black;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  </style>
+
 </head>
 <body>
 
@@ -52,70 +106,59 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
+            <h1 class="title is-1 publication-title"><span class="cfgpp">CFG++</span>: Manifold-constrained Classifier Free Guidance For Diffusion Models</h1>
+            <div class="is-size-4 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://www.hj-chung.com/" target="_blank">Hyungjin Chung</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://jeongsol.dev/" target="_blank">Jeongsol Kim</a><sup>*</sup>,</span>
+                   <span class="author-block">
+                    <a href="https://geonyeong-park.github.io/" target="_blank">Geon Yeong Park</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+                      <a href="https://www.linkedin.com/in/hyelin-nam-01ab631a3/" target="_blank">Hyelin Nam</a><sup>*</sup>,</span>
+                      <span class="author-block"> 
+                        <a href="https://scholar.google.com/citations?user=HNMjoNEAAAAJ&hl=en" target="_blank">Jong Chul Ye</a></span>
+            </div> 
+              <div class="is-size-4 publication-authors">
+                <span class="author-block" style="color:black"> KAIST </span>
+                  <!-- <br>Conferance name and year</span> -->
+                <span class="eql-cntrb" style="color:black"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              </div>
+          
+                  <!-- PDF Link -->
+                  <!-- <span class="link-block">
+                    <a href="static/pdfs/CFGPP.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    </ARXIV>
+                    <span class="icon">
+                      <i class="fas fa-file-pdf "></i>
                     </span>
+                    <span>PDF</span>
+                  </a>
+                  </span> -->
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2406.08070" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    </ARXIV>
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
                   </span>
-
+              
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/CFGpp-diffusion/CFGpp" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -123,19 +166,87 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser Carousel-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
+
+  <div class="columns is-centered" style="margin-top:-20px">
+    <h1 class="is-size-3"> 
+      <mark style="background: rgb(255, 255, 102)"> CFG++ fixes CFG's issues with lower guidance scales, 
+        <!-- We decrease CFG gudiance weight to 0 &lt; $ \lambda $ &lt; 1 by revising DDIM renoising step. -->
+        <!-- Change $ \hat\epsilon^w_c $ → $ \hat\epsilon_\varnothing $ in CFG renoising -->
+  </div>
+  <div class="columns is-centered" style="margin-top:-10px">
+    <h1 class="is-size-3"> 
+      <mark style="background: rgb(255, 255, 102)"> improving text-to-image quality and invertibility.
+        <!-- Revise DDIM renoising step  -->
+        <!-- ➜ smaller guidance scale 0 &lt; $ \lambda $ &lt; 1  better sampling & inversion -->
+        <!-- smooth generative trajectory, better sample quality, and superior inversion capability.</mark></h1> -->
+      <!-- <mark style="background: rgb(255, 255, 102)"> &#128073; smaller guidance scale 0 &lt; $ \lambda $ &lt; 1,  -->
+        <!-- better sample & inversion quality -->
+      </mark></h1>
+  </div> 
+
+  <div class="hero-body">
+    <div class="container">
+    
+      <div class="columns is-centered" style="margin-top:20px">
+        <h1 class="is-size-4"> T2I Generation Results</h1>
+        <h1 class="is-size-5", style="margin-top:4px"> &nbsp;(SD v1.5, SDXL) </h1>
+      </div>  
+
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top:-25px">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/main_1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          “kayak in the water, optical color, aerial view, rainbow”
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/main_7.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          "dog jumping in front of moon gate, purple flowers, snowy mountain"
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/main_2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          "selfie of a woman and her lion cub on the plains"
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/main_3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         "woman sniper, wearing soviet army uniform, in snow ground"
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/main_4.png" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        "fisherman sitting on a tropical beach at sunset with bending palm trees"
       </h2>
     </div>
+
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/main_5.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        "A man wearing a suit is taking a self portrait with a camera"
+      </h2>
+    </div>
+
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/main_6.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        "A painter study hard to learn how to draw …"
+      </h2>
+    </div>
+
   </div>
 </section>
 <!-- End teaser video -->
@@ -144,12 +255,50 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-four-sixths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+
+          <p style="font-size:18px;">
+          Classifier-free guidance(CFG) is a fundamental tool in modern diffusion models for text-guided generation. 
+          Although effective, CFG's reliance on high guidance scales presents notable drawbacks. 
+          In response, we introduce simple solution to this seemingly inherent limitation: <strong>  CFG++ </strong> . 
+          This innovation addresses the off-manifold issue inherent in CFG, <strong> thereby enabling effective utilization 
+          of small guidance scales (0 &lt; $ \lambda $ &lt; 1) </strong>.
+         <br>
+
+        <table style="width: 80%; margin-left:auto; margin-right:auto; text-align: center; 
+        margin-top:20px; margin-bottom:20px; background-color: rgb(245, 242, 237);" border="3" cellpadding="3">
+          <tbody>
+            <tr>
+              <td style="width: 30%; font-size: 22px;"></td>
+              <td style="width: 35%; font-size: 22px;"><strong>CFG &#128531; </strong></td>
+              <td style="width: 35%; font-size: 22px;"><strong>CFG++ &#128513; </strong></td>
+            </tr>
+            <tr>
+              <td style="width: 30%; font-size: 20px; vertical-align:middle;">T2I Generation</td>
+              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Mode Collapse and Saturation</td>
+              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Better Sample Quality <br> & Adherence to text</td>
+            </tr>
+            <tr>
+              <td style="width: 30%; font-size: 20px; vertical-align:middle;">DDIM Inversion <br> w/ CFG(++)</td>
+              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Breakdown</td>
+              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Improves and enables better image editing</td>
+            </tr>
+            <tr>
+              <td style="width: 30%; font-size: 20px; vertical-align:middle;">PF-ODE trajectory</td>
+              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Unnatural, Curved</td>
+              <td style="width: 35%; font-size: 20px; vertical-align:middle;">Smooth, Straighter</td>
+            </tr>
+          </tbody>
+        </table>
+        
+
+        Experimental results confirm that our method significantly enhances performance in text-to-image generation, 
+        DDIM inversion, editing, and solving inverse problems, suggesting a wide-ranging impact and potential applications 
+        in various fields that utilize text guidance.
+      </p>
+
         </div>
       </div>
     </div>
@@ -157,132 +306,96 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-sixths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/rs_algorithm.png" alt="rs_algorithm"/>
+          <p style=" font-size:18px;">
+            In CFG++, the renoising process after applying Tweedie’s formula should utilize the unconditional noise 
+            <span class="eps_null">$ \hat\epsilon_\varnothing $</span> instead of <span class="eps_cfg">$ \hat\epsilon^w_c $</span>. This surprisingly simple fix to the original CFG algorithm 
+            leads to smoother trajectory of generation. This improvement is also demonstrated in the following visualization of the discrete evolution of the posterior mean.
+          </p>
+          <img src="static/images/tweedie_progression.png" alt="tweedie_progression"/>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End Method -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+<!-- Downstream Tasks -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-sxiths">
+        <h2 class="title is-3">Experimental Results</h2>
+
+        <h2 class="title is-4">1. T2I Generation</h2>
+        <div class="content has-text-justified" style="margin-top:-15px; margin-bottom: 30px;">
+          <img src="static/images/T2I_gen_w_interpolation.png" alt="t2i_gen_w_interpolation"/>
+          <p style="margin-top:5px; margin-bottom: 10px; font-size:18px;">
+            As demonstrated by the teaser images, our CFG++ method results in a smoother generation trajectory and superior quality.
+            Additionally, we visualize multiple images generated by CFG++ as we increase the guidance scale $ \gamma $.
+            The visualization shows a smooth transition from unconditional sampling towards highly conditional sampling. 
+          </p>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+
+        <div class="content has-text-justified" style="margin-top:-15px; margin-bottom: 30px;">
+          <img src="static/images/T2I_gen_lightning.png" alt="T2I_gen_lightning"/>
+          <p style="margin-top:5px; margin-bottom: 10px; font-size:18px;">
+            We find that the improvement gain from CFG++ is even more dramatic for distilled diffusion models such as SDXL-{turbo, lightning}.
+            We see significant boosts in the quality of the generated images, which is also depicted in the improvements seen in the above figure.
+          </p>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
         
+        <h2 class="title is-4"> 2. Inversion and Editing </h2>
+        <div class="content has-text-justified" style="margin-top:-15px; margin-bottom: 30px;">
+          <img src="static/images/inv_algorithm.png" alt="inv_algorithm" style="margin-bottom:20px">
+          <img src="static/images/inversion_v2.png" alt="inversion"/>  
+          <p style="margin-top:5px; margin-bottom: 30px; font-size: 18px;">
+            We demonstrate the effect of CFG++ on the image inversion task. (a) Notably, DDIM inversion with CFG++ consistently reconstructs
+            the source image across all guidance scales, whereas DDIM inversion with CFG fails to do so. (b) Quantitative results, including PSNR
+            and RMSE, show a consistent improvement in reconstruction performance.
+          </p>
+        </div>
+
+        <div class="content has-text-justified" style="margin-bottom: 30px;">
+          <img src="static/images/inversion_n_editing_overview.png" alt="t2i_gen_w_interpolation"/>
+          <p style="margin-top:5px; font-size: 18px;">
+            The figures above compare image editing results using CFG and CFG++ followed by image inversion. 
+            During the editing stage, a word in the source text is swapped with the target concept, and this modified text 
+            is used as the condition for sampling. Our algorithm successfully works for both synthetic and real images.
+          </p>
+        </div>
+        
+      <h2 class="title is-4" style="margin-top:-20px;"> <br> 3. Text-conditioned Inverse Problems w/ <a href=" https://github.com/LituRout/PSLD/tree/main?tab=readme-ov-file" style="color:slateblue">PSLD</a></h2>
+      <div class="content has-text-justified">
+        <img src="static/images/ldis_main_v2.png" alt="ldis_main"/>
+          <p style="margin-top:5px; margin-bottom: 10px; font-size: 18px;">
+            We show that CFG++ enables the incorporation of text prompts into a standard diffusion inverse solvers. 
+            Specifically, we focus on comparing the performance of PSLD combined with CFG and CFG++ in solving linear inverse problems.
+            CFG++ consistently delivers high-quality reconstructions across all tasks.
+          </p>
+      </div> 
+
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
+  </div>
+</section>
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
-
 
   <footer class="footer">
   <div class="container">
@@ -292,7 +405,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
@@ -309,4 +422,4 @@
     <!-- End of Statcounter Code -->
 
   </body>
-  </html>
+  </html> 
