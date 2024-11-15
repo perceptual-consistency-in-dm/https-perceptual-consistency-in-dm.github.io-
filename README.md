@@ -1,4 +1,4 @@
-# Webpage For ICLR 2025 Submission 
+# Webpage For CVPR 2025 Submission 
 ## _PCDM: Perceptual Consistency in Diffusion Models for No-Reference Image Quality Assessment_
 
 
